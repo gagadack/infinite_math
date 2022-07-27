@@ -1,0 +1,172 @@
+html {
+    font-family: 'Klee One', cursive;
+    background-color: rgb(163, 185, 248);
+    background-image: repeating-linear-gradient(45deg, currentColor 0, currentColor 1px, transparent 0, transparent 50%);
+    background-size: 10px 10px;
+    color: #a7d1f8 !important;
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    color: #000;
+    height: 100%;
+}
+
+.top_space {
+    height: 100px;
+}
+
+#main_content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.651);
+    height: 100%;
+}
+
+
+#question {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 70px;
+    font-size: 37px;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px #17d45f;
+    text-align: center;
+    position: relative;
+}
+
+.question_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+h3 {
+    margin: 0px;
+}
+
+#answer_left {
+    text-decoration-color: #3d4ee4;
+}
+
+
+td {
+    padding: 0px;
+}
+
+button {
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.arrow_button {
+    width: 200px;
+    height: 50px;
+}
+
+.number_button {
+    width: 100px;
+    height: 100px;
+}
+
+.pm_button {
+    width: 100px;
+    height: 200px;
+}
+
+.enter_button {
+    width: 300px;
+    height: 100px;
+}
+
+.button_zone {
+    margin-left: auto;
+    margin-right: auto;
+    width: 408px;
+    height: 510px;
+}
+
+
+
+
+
+
+.number_button {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #EC407A;
+	border: 2px solid #EC407A;
+	border-radius: 3px;
+	transition: .2s;
+}
+.number_button:hover {
+	background: #EC407A;
+	color: #fff;
+}
+
+
+.enter_button {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #17d45f;
+	border: 2px solid #17d45f;
+	border-radius: 3px;
+	transition: .2s;
+}
+.enter_button:hover {
+	background: #17d45f;
+	color: #fff;
+}
+
+
+.pm_button {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #fca626;
+	border: 2px solid #fca626;
+	border-radius: 3px;
+	transition: .2s;
+}
+.pm_button:hover {
+	background: #fca626;
+	color: #fff;
+}
+
+.arrow_button {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #3d4ee4;
+	border: 2px solid #3d4ee4;
+	border-radius: 3px;
+	transition: .2s;
+}
+.arrow_button:hover {
+	background: #3d4ee4;
+	color: #fff;
+}
+
+
+
+
+
+#footer {
+    background-color: #8691f0;
+    color: #ffffff;
+    padding: 0px;
+    text-align: center;
+}
