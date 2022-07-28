@@ -16,6 +16,7 @@ function make_question(lv){
     let c = 1;
     let d = get_not0_Randam(-9,9);
 
+
     qa = a*c
     qb = a*d+b*c
     qc = b*d
@@ -33,22 +34,22 @@ function let_span(qa, qb, qc){
     for(let i = 0 ; i < 3 ; i++){
 
         let text = ""
-        if (deta_list[i] > 1){
+        if (deta_list[i] > 1 || (i === 2 & deta_list[i] === 1 )){
             if (i >= 1){
                 text = "+" + deta_list[i]
             }else{
                 text = deta_list[i]
             }
         }
-        if (deta_list[i] == 1){
+        if (deta_list[i] === 1 & i !== 2){
             if (i >= 1){
                 text = "+"
             }
         }
-        if(deta_list[i] < -1){
+        if(deta_list[i] < -1 || (i === 2 & deta_list[i] === -1 )){
             text = + deta_list[i]
         }
-        if(deta_list[i] == -1){
+        if(deta_list[i] == -1 & i !== 2){
             text = "-"
         }
 
@@ -100,6 +101,11 @@ function button(n){
             let id = "answer_" + String(now_answer) + "b"
             element = document.getElementById(id)
             element.textContent = n
+
+            // 左側なら1問につき1回だけ自動で右に送る
+            if ( now_answer === 1){
+                n = "r"
+            }
         }
         if (n === "p"){
             let id = "answer_" + String(now_answer) + "a"
